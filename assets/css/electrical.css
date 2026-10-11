@@ -1,0 +1,18 @@
+/* electrical.css - Electrical Testing & Maintenance (dark, technical spec-sheet style) */
+.spec{display:grid;grid-template-columns:1fr 1fr;gap:0 56px}
+.spec-row{display:grid;grid-template-columns:minmax(150px,.8fr) 1.2fr;gap:20px;padding:20px 0;border-bottom:1px solid var(--rule)}
+.spec-row h3{font-size:1.05rem;margin:0}
+.spec-row p{margin:0;color:var(--muted);font-size:.98rem}
+.deliver{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--rule);border-radius:var(--radius);overflow:hidden}
+.deliver div{padding:28px;background:var(--surface);border-right:1px solid var(--rule)}
+.deliver div:last-child{border-right:0}
+.deliver p{margin:0;color:var(--muted);font-size:.98rem}
+.alert{margin-top:32px;padding:20px 24px;border-left:4px solid var(--copper);background:var(--surface)}
+.alert p{margin:0}
+.theme-dark .btn-line:hover{background:#fff;color:var(--ink)}
+@media (max-width:860px){
+  .spec{grid-template-columns:1fr}
+  .deliver{grid-template-columns:1fr}
+  .deliver div{border-right:0;border-bottom:1px solid var(--rule)}
+  .spec-row{grid-template-columns:1fr;gap:6px}
+}
