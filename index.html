@@ -4,119 +4,127 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fares Hamad Hoteil Al Monajem | Procurement and Maintenance</title>
-<meta name="description" content="Industrial machines, spare parts, electrical testing and maintenance. Procurement specialist and maintenance partner.">
+<meta name="description" content="Industrial machines and spare parts sourcing, plus electrical testing and maintenance.">
 <link rel="icon" href="https://cdn.imgchest.com/files/e124e5c17b7b.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/base.css">
-<link rel="stylesheet" href="assets/css/home.css">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="">
+<body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="./index.html" aria-label="Fares Hamad Hoteil Al Monajem - home">
-      <img src="https://cdn.imgchest.com/files/e124e5c17b7b.png" alt="Fares Hamad Hoteil Al Monajem logo" height="46">
-      <span>Fares Hamad Hoteil Al Monajem</span>
-    </a>
-    <button class="menu-btn" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-    </button>
-    <nav class="nav" id="site-nav" aria-label="Main">
-      <ul>
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="industrial-equipment/index.html">Industrial equipment</a></li>
-        <li><a href="electrical-testing-maintenance/index.html">Electrical testing &amp; maintenance</a></li>
-        <li><a class="nav-cta" href="contact/index.html">Contact</a></li>
-      </ul>
+    <a class="brand" href="#top" data-bot="Back to the top." data-mood="happy"><img src="https://cdn.imgchest.com/files/e124e5c17b7b.png" alt="Fares Hamad Hoteil Al Monajem logo" height="46"><span>Fares Hamad Hoteil Al Monajem</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#industrial" data-bot="Jump to machines and spare parts." data-mood="searching">Industrial equipment</a>
+      <a href="#electrical" data-bot="Jump to electrical testing and maintenance." data-mood="thinking">Electrical</a>
+      <a class="btn btn-coral" href="#contact" data-bot="Go to the contact section: call, WhatsApp or email." data-mood="excited">Contact</a>
     </nav>
   </div>
 </header>
+
 <main id="main">
-
-<section class="hero">
+<section class="hero" id="top" data-section data-mood="curious" data-bot-section="Pick a service below, or just scroll. I will follow you.">
   <div class="wrap">
-    <h1>Procurement and maintenance, handled by one team.</h1>
-    <p class="lead">We source industrial machines and spare parts, and we test and maintain electrical systems. Choose the service you need.</p>
-    <div class="pick">
-      <a class="pick-card pick-industrial" href="industrial-equipment/index.html">
-        <svg class="tag" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="7"/><path d="M24 4v6M24 38v6M4 24h6M38 24h6M10 10l4 4M34 34l4 4M38 10l-4 4M14 34l-4 4"/></svg>
+    <h1>Procurement and maintenance in one place.</h1>
+    <p class="lead">We source industrial machines and spare parts, and we test and maintain electrical systems. Choose what you need.</p>
+    <div class="panels">
+      <a class="panel panel-light" href="#industrial" data-bot="Machines and spare parts. Click and I will scroll you to the catalogue." data-mood="excited">
         <div>
+          <svg class="panel-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><circle cx="24" cy="24" r="8"/><path d="M24 4v7M24 37v7M4 24h7M37 24h7M10 10l5 5M33 33l5 5M38 10l-5 5M15 33l-5 5"/></svg>
           <h2>Industrial equipment</h2>
-          <p>Machines and spare parts sourced to your specification.</p>
-          <ul><li>Industrial machines</li><li>Spare parts and consumables</li><li>Quotation from part number or nameplate</li></ul>
+          <p>Machines and spare parts, sourced to your specification.</p>
+          <ul><li>Industrial machines</li><li>Spare parts and consumables</li><li>Quote from a part number or nameplate</li></ul>
         </div>
-        <span class="pick-go">View equipment <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <span class="panel-go">See equipment <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></span>
       </a>
-      <a class="pick-card pick-electrical" href="electrical-testing-maintenance/index.html">
-        <svg class="tag" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" aria-hidden="true"><path d="M27 4 10 27h12l-2 17 18-24H26z"/></svg>
+      <a class="panel panel-dark" href="#electrical" data-bot="Testing and maintenance for your power systems. Click to see what we test." data-mood="thinking">
         <div>
-          <h2>Electrical testing &amp; maintenance</h2>
-          <p>Site testing and upkeep that keeps your power systems safe and running.</p>
-          <ul><li>Testing of panels, cables, transformers</li><li>Preventive and breakdown maintenance</li><li>Written test reports</li></ul>
+          <svg class="panel-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" aria-hidden="true"><path d="M27 4 10 27h12l-2 17 18-24H26z"/></svg>
+          <h2>Electrical testing and maintenance</h2>
+          <p>Site testing and upkeep that keeps power systems safe and running.</p>
+          <ul><li>Panels, cables, transformers, relays</li><li>Preventive and breakdown maintenance</li><li>Written test reports</li></ul>
         </div>
-        <span class="pick-go">View services <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <span class="panel-go">See services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></span>
       </a>
     </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="wrap roles">
-    <h2>A procurement specialist and a maintenance partner.</h2>
-    <div class="role-list">
-      <div><h3>Procurement</h3><p>Tell us the machine or part. We find it, compare suppliers, confirm specifications and manage delivery, so your team does not chase quotations.</p></div>
-      <div><h3>Maintenance</h3><p>Our technicians test, service and repair on site, then record what was found so the next visit starts from facts.</p></div>
-      <div><h3>One point of contact</h3><p>Whether you need a spare part or a test report, you speak to the same team by phone, WhatsApp or email.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section process" aria-labelledby="proc-h">
+<section class="section" id="industrial" data-section data-mood="searching" data-bot-section="Looking for a machine or a part? This is the catalogue.">
   <div class="wrap">
-    <h2 id="proc-h">How a request moves.</h2>
-    <ol>
-      <li><h3>Send the request</h3><p>Part number, photo, drawing or a short description of the fault.</p></li>
-      <li><h3>We confirm details</h3><p>Specification, quantity, brand and site conditions are checked with you.</p></li>
-      <li><h3>Quotation or visit plan</h3><p>You receive pricing and lead time, or a scheduled site visit.</p></li>
-      <li><h3>Delivery or service</h3><p>Goods delivered, or work completed with documentation.</p></li>
+    <span class="sheet-tag">Industrial equipment</span>
+    <div class="head-row">
+      <h2>Tell us the machine or the part. We find it.</h2>
+      <p class="lead">We compare suppliers, confirm the specification and manage delivery, so your team does not chase quotations.</p>
+    </div>
+    <div class="two ruled">
+      <div><h3>Machines</h3><dl><div class="row" data-bot="Pumps and compressors. Tell me the flow, pressure and power you need." data-mood="curious"><dt>Pumps and compressors</dt><dd>Centrifugal and submersible pumps, air compressors, vacuum units.</dd></div><div class="row" data-bot="Motors and drives. A photo of the nameplate is enough for me to match it." data-mood="curious"><dt>Motors and drives</dt><dd>Electric motors, variable frequency drives, gearboxes.</dd></div><div class="row" data-bot="Lifting and moving loads around your site." data-mood="curious"><dt>Material handling</dt><dd>Hoists, cranes, conveyors, lifting gear.</dd></div><div class="row" data-bot="Power equipment. We can pair this with electrical testing." data-mood="curious"><dt>Power and generation</dt><dd>Generators, transformers, switchgear and panels.</dd></div><div class="row" data-bot="Machines for your workshop floor." data-mood="curious"><dt>Workshop machinery</dt><dd>Lathes, milling, welding, cutting and drilling machines.</dd></div><div class="row" data-bot="Not on the list? Ask anyway, sourcing is what we do." data-mood="curious"><dt>Anything else</dt><dd>Describe the machine and the job. We source new or refurbished.</dd></div></dl></div>
+      <div><h3>Spare parts</h3><dl><div class="row" data-bot="Bearings and seals: send the number printed on the old one." data-mood="curious"><dt>Bearings and seals</dt><dd>Ball and roller bearings, mechanical seals, O-rings, gaskets.</dd></div><div class="row" data-bot="Filters and fluids for routine servicing." data-mood="curious"><dt>Filters and fluids</dt><dd>Air, oil and fuel filters, lubricants, greases, hydraulic oils.</dd></div><div class="row" data-bot="Parts that carry power from motor to machine." data-mood="curious"><dt>Power transmission</dt><dd>Belts, pulleys, couplings, chains, sprockets.</dd></div><div class="row" data-bot="Valves and fittings for fluid lines." data-mood="curious"><dt>Valves and fittings</dt><dd>Valves, flanges, fittings, hoses, connectors.</dd></div><div class="row" data-bot="Electrical parts for panels and repairs." data-mood="curious"><dt>Electrical components</dt><dd>Contactors, relays, breakers, cables, terminals.</dd></div><div class="row" data-bot="Old machine, missing part? We search beyond the original brand." data-mood="curious"><dt>Hard-to-find parts</dt><dd>Older or discontinued items. Send a part number or a photo.</dd></div></dl></div>
+    </div>
+    <ol class="steps" aria-label="How to request equipment">
+      <li data-bot="Step one: send what you know." data-mood="listening"><h3>Send the request</h3><p>Part number, model, a photo or a short description.</p></li>
+      <li data-bot="Step two: I mean the team checks brand, size and quantity." data-mood="thinking"><h3>We verify details</h3><p>Brand, size, quantity and site conditions.</p></li>
+      <li data-bot="Step three: pricing and lead time in writing." data-mood="proud"><h3>You get a quotation</h3><p>Pricing, availability and delivery time in writing.</p></li>
+      <li data-bot="Step four: it arrives at your site." data-mood="happy"><h3>Approve and receive</h3><p>We coordinate supply and delivery to your site.</p></li>
     </ol>
+    <div class="cta-row">
+      <a class="btn btn-coral" href="mailto:sayed@faresfirm.com?subject=Quotation%20request%20-%20industrial%20equipment" data-bot="Opens an email with the subject filled in. Add the part number or a photo." data-mood="excited">Request a quotation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <span>Include part number, brand, quantity and delivery location.</span>
+    </div>
   </div>
 </section>
 
-</main>
-<section class="contact-band" aria-labelledby="cb-h">
+<section class="section dark on-dark" id="electrical" data-section data-mood="thinking" data-bot-section="Electrical testing and maintenance. Everything is recorded in a report.">
   <div class="wrap">
-    <div>
-      <h2 id="cb-h">Tell us what you need.</h2>
-      <p>Send a part number, a nameplate photo or a description of the fault. We reply with availability and a quotation, or with a site visit plan.</p>
+    <span class="sheet-tag">Electrical testing and maintenance</span>
+    <div class="head-row">
+      <h2>Test it before it fails. Maintain it so it keeps running.</h2>
+      <p class="lead">On-site testing and maintenance for industrial and commercial facilities, with a written record of every result.</p>
     </div>
-    <div class="contact-actions">
-      <a class="btn" href="tel:+966595705771"><span>Call<small>+966 59 570 5771</small></span><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <a class="btn" href="https://wa.me/966595705771" target="_blank" rel="noopener"><span>WhatsApp<small>+966 59 570 5771</small></span><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <a class="btn" href="mailto:sayed@faresfirm.com"><span>Email<small>sayed@faresfirm.com</small></span><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <div class="two ruled">
+      <div><h3>What we test</h3><dl><div class="row" data-bot="Insulation tests catch weak cables before they fail." data-mood="curious"><dt>Insulation resistance</dt><dd>Checks cables, motors and transformers for insulation breakdown.</dd></div><div class="row" data-bot="Earthing tests: is your fault current going where it should?" data-mood="curious"><dt>Earthing</dt><dd>Measures earth resistance to confirm a safe fault path.</dd></div><div class="row" data-bot="Transformer checks." data-mood="curious"><dt>Transformers</dt><dd>Ratio, winding resistance and oil condition checks.</dd></div><div class="row" data-bot="Breaker testing: will it trip when it must?" data-mood="curious"><dt>Circuit breakers</dt><dd>Contact resistance, trip timing and operation.</dd></div><div class="row" data-bot="Relay testing confirms the protection works." data-mood="curious"><dt>Protection relays</dt><dd>Secondary injection to confirm settings and trip behaviour.</dd></div><div class="row" data-bot="Thermal scans find hot joints before they burn." data-mood="curious"><dt>Thermal inspection</dt><dd>Infrared scanning to find hot connections early.</dd></div></dl></div>
+      <div><h3>How we maintain</h3><dl><div class="row" data-bot="Planned visits so problems are found early." data-mood="curious"><dt>Preventive maintenance</dt><dd>Scheduled inspection, cleaning, tightening and testing.</dd></div><div class="row" data-bot="Something stopped? Call me through the button below." data-mood="curious"><dt>Breakdown repair</dt><dd>Fault finding and repair when a system stops.</dd></div><div class="row" data-bot="Work planned around your shutdown." data-mood="curious"><dt>Shutdown support</dt><dd>Planned work inside your shutdown window.</dd></div><div class="row" data-bot="A yearly schedule so nothing is forgotten." data-mood="curious"><dt>Annual contracts</dt><dd>A fixed visit schedule so nothing is missed.</dd></div></dl></div>
+    </div>
+    <div class="two" style="margin-top:56px;gap:24px">
+      <p style="margin:0" data-bot="Every visit ends with results, findings and priorities. Nothing stays in someone's head." data-mood="proud"><b>Every visit ends with a report:</b> test results for each asset, what passed and what did not, and recommendations in order of priority.</p>
+      <p style="margin:0" data-bot="Need a part for the repair? The procurement side can supply it." data-mood="curious"><b>Parts for the repair?</b> Our procurement side can supply them, so repair and sourcing stay with one team.</p>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-coral" href="mailto:sayed@faresfirm.com?subject=Site%20visit%20request%20-%20electrical%20testing" data-bot="Opens an email. List your equipment and voltage level and we will propose a test plan." data-mood="excited">Request a site visit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <span>List your equipment and voltage level for a test plan.</span>
     </div>
   </div>
 </section>
-<footer class="site-footer">
+
+<section class="contact" id="contact" data-section data-mood="happy" data-bot-section="Last stop. Pick call, WhatsApp or email.">
   <div class="wrap">
-    <div>
-      <strong>Fares Hamad Hoteil Al Monajem Maintenance Establishment</strong>
-      <p>Procurement and maintenance for industrial operations.</p>
-      <p>&copy; <span id="year">2026</span> Fares Hamad Hoteil Al Monajem. All rights reserved.</p>
+    <span class="sheet-tag">Contact</span>
+    <h2>Tell us what you need.</h2>
+    <p class="lead">Send a part number, a nameplate photo or a description of the fault. We reply with availability and pricing, or a site visit plan.</p>
+    <div class="channels">
+      <a class="channel" href="tel:+966595705771" data-bot="Starts a phone call to +966 59 570 5771." data-mood="happy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><div><strong>Call</strong><span>+966 59 570 5771</span></div></a>
+      <a class="channel" href="https://wa.me/966595705771" target="_blank" rel="noopener" data-bot="Opens WhatsApp. Good for photos of parts and nameplates." data-mood="playful"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg><div><strong>WhatsApp</strong><span>+966 59 570 5771</span></div></a>
+      <a class="channel" href="mailto:sayed@faresfirm.com" data-bot="Opens your email app, addressed to sayed@faresfirm.com." data-mood="proud"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><div><strong>Email</strong><span>sayed@faresfirm.com</span></div></a>
     </div>
-    <div>
-      <ul>
-        <li><a href="industrial-equipment/index.html">Industrial equipment</a></li>
-        <li><a href="electrical-testing-maintenance/index.html">Electrical testing &amp; maintenance</a></li>
-        <li><a href="contact/index.html">Contact</a></li>
-      </ul>
-      <p><a href="tel:+966595705771">+966 59 570 5771</a> &nbsp;|&nbsp; <a href="mailto:sayed@faresfirm.com">sayed@faresfirm.com</a></p>
+    <div class="title-block" role="contentinfo">
+      <div><small>Company</small><b>Fares Hamad Hoteil Al Monajem Maintenance Establishment</b></div>
+      <div><small>Services</small><b>Procurement and maintenance</b></div>
+      <div><small>Contact</small><b>sayed@faresfirm.com<br>+966 59 570 5771</b></div>
     </div>
   </div>
-</footer>
-<a class="wa-float" href="https://wa.me/966595705771" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.700-5.400A8.400 8.400 0 1 1 21 11.500z"/></svg><span>WhatsApp</span></a>
-<script src="assets/js/main.js" defer></script>
+</section>
+</main>
+
+<aside class="bot" id="freddy" aria-label="Freddy, site guide">
+  <div class="bot-bubble" role="status" aria-live="polite"><p class="bot-text"></p></div>
+  <div class="bot-avatar" role="img" aria-label="Freddy, a small orange bear-shaped guide bot"></div>
+  <button class="bot-toggle" type="button" aria-pressed="false">Hide hints</button>
+</aside>
+
+<script src="assets/js/freddy-data.js"></script>
+<script src="assets/js/avatar.js"></script>
+<script src="assets/js/bot.js"></script>
 </body>
 </html>

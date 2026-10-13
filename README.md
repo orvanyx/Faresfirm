@@ -1,30 +1,33 @@
-# Fares Hamad Hoteil Al Monajem Maintenance Establishment - Website
+# Fares Hamad Hoteil Al Monajem Maintenance Establishment - single-page site with Freddy guide bot
 
-Static website (HTML, CSS, JS). No build step.
+Static site, no build step.
 
-## Structure
-- `index.html` - home page with the two activity selectors
-- `industrial-equipment/` - machines, spare parts, how to order
-- `electrical-testing-maintenance/` - testing, maintenance, reports
-- `contact/` - call, WhatsApp, email, enquiry form
-- `assets/css/base.css` - shared design tokens, header, footer, tabs
-- `assets/css/<page>.css` - one stylesheet per activity so each can look different
-- `assets/js/` - menu, tabs, contact form
+```
+fares-website-v2/
+  index.html
+  README.md
+  assets/
+    css/style.css            all styling (sheet theme + Freddy)
+    js/freddy-data.js        avatar definition as a JS global (same data as the .json)
+    js/avatar.js             renderer for *.avatar.json (CSS 3D, animations, blinking)
+    js/bot.js                Freddy behaviour: follow scroll, explain hovers, moods, sleep
+    data/freddy.avatar.json  original export, kept as the source of truth
+```
 
-## Run locally on Windows (PowerShell)
+## Make Freddy explain something
+Add `data-bot="text"` to any element. Optional `data-mood="happy"` picks an animation
+(any name from the avatar file: idle, happy, excited, thinking, searching, proud, playful ...).
+Sections use `data-section data-mood="..."` and optional `data-bot-section="greeting"`.
+
+## Update the avatar
+Re-export from the avatar tool, replace `assets/data/freddy.avatar.json`, then regenerate `freddy-data.js`:
 ```powershell
-cd fares-website
+"window.FREDDY_AVATAR = " + (Get-Content assets/data/freddy.avatar.json -Raw) + ";" | Set-Content assets/js/freddy-data.js -Encoding utf8
+```
+
+## Run locally (Windows)
+```powershell
+cd fares-website-v2
 py -m http.server 8080
 ```
-Open http://localhost:8080
-
-## Deploy to Cloudflare Pages
-1. Push this folder to GitHub.
-2. Cloudflare dashboard > Workers & Pages > Create > Pages > Connect to Git.
-3. Framework preset: None. Build command: leave empty. Build output directory: `/`
-4. Save and deploy. Add your domain under Custom domains.
-
-## Adding a new activity
-1. Copy `electrical-testing-maintenance/` to a new folder and edit it.
-2. Add `assets/css/<new>.css`.
-3. Add a card in `index.html` and a link in the header and footer.
+Deploy on Cloudflare Pages: framework None, no build command, output directory `/`.
